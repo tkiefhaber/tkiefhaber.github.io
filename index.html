@@ -24,6 +24,7 @@
     </g>
   </g>
 </svg>
+<h2 id='count' style="margin-left: 155px">0</h2>
 
 <script>
 
@@ -36,9 +37,12 @@
   });
 
   var offset = 1
+  var glassCount = 0
   function fillGlass() {
     offset -= 0.166;
+    glassCount += 1;
     $('#moving-line').attr('offset', offset);
+    $('#count').text(glassCount);
   }
 </script>
 </body>
